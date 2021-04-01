@@ -1,0 +1,4 @@
+  {
+  "unique": "O campo {{ field }} deve ser único",
+  "required": "O campo {{ field }} é obrigatório"
+}
