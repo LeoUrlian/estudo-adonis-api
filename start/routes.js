@@ -17,3 +17,10 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+//USUARIO
+Route.post('/users', 'UserController.create')
+Route.post('/sessions', 'SessionController.create')
+
+//PRODUTOS
+Route.post('/api/produto', 'ProdutoController.create').middleware('auth')
