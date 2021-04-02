@@ -24,3 +24,7 @@ Route.post('/sessions', 'SessionController.create')
 
 //PRODUTOS
 Route.post('/api/produto', 'ProdutoController.create').middleware('auth')
+Route.get('/api/produto', 'ProdutoController.get').middleware('auth')
+Route.get('/api/produto/:id', 'ProdutoController.getById').middleware('auth')
+Route.put('/api/produto/:id', 'ProdutoController.update').middleware('auth')
+Route.delete('/api/produto/:id', 'ProdutoController.delete').middleware('auth')
